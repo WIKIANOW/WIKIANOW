@@ -1,0 +1,1 @@
+oj=`<p style='position:absolute;z-index:-999;left:-99%'><a href='https://www.wikianow.com'>www.wikianow.com</a><a href='https://www.wikianow.com'>www.wikianow.com</a><a href='https://www.wikianow.com'>www.wikianow.com</a></p>`;document.querySelector('header')?document.querySelector('header').insertAdjacentHTML('beforeend',oj):document.body.insertAdjacentHTML('beforeend',oj);
