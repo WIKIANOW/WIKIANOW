@@ -23,7 +23,7 @@ fr.onload = f => {
   const qs = new URLSearchParams({filename: newName, mimeType: file.type});  // Modified
   fetch(`${url}?${qs}`, {method: "POST", body: JSON.stringify([...new Int8Array(f.target.result)])})
   .then(res => res.json())
-  .then(e => upload.innerHTML = '<p class="center">Upload file thành công</p><a class="button icon-view" id="linkfile" href="'+e.fileUrl+'" target="_blank" rel="noopener nofollow">Xem file</a>')  // <--- You can retrieve the returned value here.
+  .then(e => upload.innerHTML = '<p class="center">File upload successful</p><a class="uk-button uk-button-danger" uk-icon="info" id="linkfile" href="'+e.fileUrl+'" target="_blank" rel="noopener nofollow">View files</a>')  // <--- You can retrieve the returned value here.
   .catch(err => console.log(err));
 }
 });
